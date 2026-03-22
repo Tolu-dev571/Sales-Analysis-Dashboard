@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UFT-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.o">
+        <title>Sales Analysis Dashboard</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="chart.js"></script>
+    </head>
+
+    <body>
+        <header>
+            <h1>Sales Analysis Dashoard</h1>
+        </header>
+       
+         <div  class="container">
+
+            <div  class="dashboard">
+                <div  class="card">
+                <h3> Total Leads</h3>
+                <p id="totalLeads">0</p>
+                </div>
+
+                <div class="card">
+                <h3>Closed Deals</h3>
+                <p id="closedDealsDisplay">0</p>
+                </div>
+
+                <div class="card">
+                <h3>Conversion Rate</h3>
+                <p id="conversionRate">0%</p>
+                </div>
+
+                <div class="card">
+                <h3>Estimated Revenue</h3>
+                <p id="estimatedRevenue">$0</p>
+                </div>
+            </div>
+
+            <h2>Enter Sales Data</h2>
+            <div class="form-container">    
+                    <label>Linkedin Leads</label>
+                    <input type="number" id="linkedinLeads">
+                    <label>Email Leads</label>
+                    <input type="number" id="emailLeads">
+                    <label>Referral Leads</label>
+                    <input type="number" id="referralLeads">  
+                    <label>Closed Deals</label>
+                    <input type="number" id="closedDeals">
+                    <button onclick="calculateSales()">Calculate</button>
+            </div>
+
+            <div class="chart-container">
+            <h2>Sales Chart</h2>    
+            <canvas id="salesChart"></canvas>
+            </div>
+
+            <div class="chart-container">
+            <h2>Revenue Chart</h2>    
+            <canvas id="revenueChart"></canvas>
+            </div>
+      </div>
+
+      <footer class="site-footer">
+        <p>&copy; 2026 Adeniji Tolu. All rights reserved.</p>
+        <p>
+            <a href="#">Privacy Policy</a> |
+            <a href="#">Terms of Service</a> |
+            <a href="#">Security</a> |
+            <a href="#">Status</a> |
+            <a href="#">Community</a> 
+        </p>
+       </footer>
+
+    <script src="script.js"></script>
+    </body>
+</html>
